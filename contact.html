@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Us - Cyberpunk World">
+    <meta name="author" content="Cyberpunk Fan">
+    <title>Contact - Cyberpunk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-section">
+                <div class="site-logo">
+                    <img src="Matvii_Butenko_Logo.svg" alt="Cyberpunk Logo" class="header-logo">
+                </div>
+                
+                <h1>⚡ CYBERPUNK WORLD ⚡</h1>
+                <p class="tagline">Enter the Future. Embrace the Code.</p>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Domov</a></li>
+                    <li><a href="game_features.html">Game Features</a></li>
+                    <li><a href="implants.html">Implants</a></li>
+                    <li><a href="weapons.html">Weapons</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="tasks.html">Zadania</a></li>
+                    <li><a href="ulohy.html">Ulohy</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main-content">
+
+            <section class="page-header">
+                <h1>CONTACT US</h1>
+                <p>Send us a message. We'll respond from the mainframe.</p>
+            </section>
+
+
+            <section class="contact-section">
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h2>Get In Touch</h2>
+                        <p>Have questions about Cyberpunk World? Want to report bugs? Or just want to chat about the future of gaming?</p>
+                        
+                        <div class="contact-details">
+                            <div class="detail-item">
+                                <span class="detail-icon">📧</span>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>contact@cyberpunkworld.net</p>
+                                </div>
+                            </div>
+                            
+                            <div class="detail-item">
+                                <span class="detail-icon">💻</span>
+                                <div>
+                                    <h4>Discord Server</h4>
+                                    <p>Join our community</p>
+                                </div>
+                            </div>
+                            
+                            <div class="detail-item">
+                                <span class="detail-icon">🌐</span>
+                                <div>
+                                    <h4>Website</h4>
+                                    <p>www.cyberpunkworld.net</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" action="process.php" method="POST">
+
+                        <fieldset>
+                            <legend>Your Personal Information</legend>
+                            
+                            <div class="form-group">
+                                <label for="name">Full Name: <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email: <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone (Optional)</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567">
+                            </div>
+                        </fieldset>
+
+
+                        <fieldset>
+                            <legend>Your Message</legend>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject: <span class="required">*</span></label>
+                                <input type="text" id="subject" name="subject" placeholder="What is this about?" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="category">Category: <span class="required">*</span></label>
+                                <select id="category" name="category" required>
+                                    <option value="">-- Select a category --</option>
+                                    <option value="bug">Bug Report</option>
+                                    <option value="feature">Feature Request</option>
+                                    <option value="feedback">General Feedback</option>
+                                    <option value="support">Technical Support</option>
+                                    <option value="partnership">Partnership Inquiry</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message: <span class="required">*</span></label>
+                                <textarea id="message" name="message" rows="8" placeholder="Tell us what's on your mind..." required></textarea>
+                            </div>
+                        </fieldset>
+
+
+                        <fieldset>
+                            <legend>Preferences</legend>
+                            
+                            <div class="form-group checkbox-group">
+                                <label>
+                                    <input type="checkbox" name="newsletter" value="yes">
+                                    Subscribe to our newsletter for game updates
+                                </label>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <label>
+                                    <input type="checkbox" name="response" value="yes" required>
+                                    I agree to be contacted via email <span class="required">*</span>
+                                </label>
+                            </div>
+                        </fieldset>
+
+
+                        <fieldset>
+                            <legend>Submit</legend>
+                            
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-submit">SEND MESSAGE</button>
+                                <button type="reset" class="btn btn-reset">CLEAR FORM</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+
+
+            <section class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+                
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>How long does it take to get a response?</h3>
+                        <p>We typically respond within 24-48 hours. For urgent matters, join our Discord community.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>Can I report bugs here?</h3>
+                        <p>Yes! Select "Bug Report" in the category dropdown and provide as much detail as possible. Screenshots help!</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>Do you accept feature requests?</h3>
+                        <p>Absolutely! We love hearing your ideas. Select "Feature Request" and describe what you'd like to see.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>Is my information secure?</h3>
+                        <p>Yes. All data is encrypted and handled securely according to our privacy policy.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Cyberpunk World</p>
+            <p>User: Butenko Matvii</p>
+            <p>Date: 2026-01-18</p>
+        </footer>
+    </div>
+</body>
+</html>

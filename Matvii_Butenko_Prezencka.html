@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Prezenčná listina</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;margin:20px;color:#000;background-color: #ffffff;}
+    h1{text-align:center;letter-spacing:4px;margin:6px 0 12px}
+    table{width:100%;border-collapse:collapse}
+    th,td{border:1px solid #000;padding:6px;font-size:13px}
+    .header-cell{padding:8px 10px;text-align:left;background:#ffffff;}
+    .col-no{width:3%;text-align:center}
+    .col-name{width:25%;text-align:left;padding-left:8px}
+    .week{width:3%;font-size:12px}
+    .small{font-size:12px}
+    .date { border:1px solid #000; box-sizing: border-box; }
+    .no-print{margin-top:10px}
+    @media print{.no-print{display:none}}
+  </style>
+</head>
+<body>
+
+  <h1>Prezenčná listina</h1>
+
+  <table>
+    <tr>
+      <td class="header-cell" colspan="9">
+        <strong>Predmet:</strong> ___________________________<br>
+        <strong>Semester:</strong> __________________________<br>
+        <strong>Číslo triedy:</strong> _______________________
+      </td>
+      <td class="header-cell" colspan="8">
+        <strong>Skupina:</strong> ____________________________<br>
+        <strong>Číslo triedy (kód):</strong> _________________<br>
+        <strong>Čas:</strong> ________________________________
+      </td>
+    </tr>
+  </table>
+
+  <table aria-label="prezencka" style="margin-top:8px">
+    <thead>
+      <tr>
+        <th rowspan="2" class="col-no">Č.</th>
+        <th rowspan="2" class="col-name">Meno</th>
+        <th colspan="13">Týždeň</th>
+        <th colspan="2">Zápočet</th>
+      </tr>
+      <tr class="small">
+        <th class="week">1</th><th class="week">2</th><th class="week">3</th><th class="week">4</th><th class="week">5</th>
+        <th class="week">6</th><th class="week">7</th><th class="week">8</th><th class="week">9</th><th class="week">10</th>
+        <th class="week">11</th><th class="week">12</th><th class="week">13</th>
+        <th class="small">B</th>
+        <th class="small date">Dátum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="date"></td></tr>
+      <tr><td>2</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="date"></td></tr>
+      <tr><td>3</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="date"></td></tr>
+      <tr><td>4</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="date"></td></tr>
+      <tr><td>5</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="date"></td></tr>
+      <tr><td>6</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="date"></td></tr>
+      <tr><td>7</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="date"></td></tr>
+      <tr><td>8</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="date"></td></tr>
+      <tr><td>9</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="date"></td></tr>
+      <tr><td>10</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="date"></td></tr>
+      <tr><td>11</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="date"></td></tr>
+      <tr><td>12</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="date"></td></tr>
+      <tr><td>13</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="date"></td></tr>
+      <tr><td>14</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="date"></td></tr>
+      <tr><td>15</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="date"></td></tr>
+      <tr><td>16</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="date"></td></tr>
+      <tr><td>17</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="date"></td></tr>
+      <tr><td>18</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="date"></td></tr>
+      <tr><td>19</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="date"></td></tr>
+      <tr><td>20</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="date"></td></tr>
+    </tbody>
+  </table>
+
+  
+
+</body>
+</html>
+
